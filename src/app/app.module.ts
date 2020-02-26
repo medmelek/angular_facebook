@@ -10,6 +10,7 @@ import {
   GoogleLoginProvider,
   FacebookLoginProvider,
 } from "angular-6-social-login";
+
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
     [
@@ -40,7 +41,7 @@ export function getAuthServiceConfigs() {
   providers: [
     {
       provide: AuthServiceConfig,
-      useFactory: getAuthServiceConfigs
+      useFactory: getAuthServiceConfigs,
     }
   ],
   bootstrap: [AppComponent]
