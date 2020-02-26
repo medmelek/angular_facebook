@@ -14,6 +14,7 @@ export class AppComponent {
   constructor(private socialAuthService: AuthService) { }
 
   public socialSignIn(socialPlatform: string) {
+    
     let socialPlatformProvider;
     if (socialPlatform == "facebook") {
       socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
